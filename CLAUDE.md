@@ -83,6 +83,12 @@ project_name/
 - Keep commits small and focused on a single change
 - Never commit secrets, credentials, or API keys
 
+## Scope of Changes
+- Fixes must be limited in scope to the problem described — do not bundle unrelated changes
+- Separate problems get separate PRs, even if noticed while working on the original fix
+- Reformatting, restyling, and cleanup must go in a dedicated PR, never mixed with a fix or feature
+- If you spot an unrelated issue, note it for a follow-up PR rather than addressing it in the current one
+
 ## Logging
 - Use the logging module, not print statements
 - Use appropriate log levels: DEBUG, INFO, WARNING, ERROR, CRITICAL
