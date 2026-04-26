@@ -35,6 +35,7 @@
 - Use unittest.mock for mocking dependencies
 - Name tests descriptively: test_should_[expected]_when_[condition]
 - Each class should have a corresponding test file (e.g. photo_resizer.py → test_photo_resizer.py)
+- Avoid duplicated setup across tests — if multiple tests share identical arrange steps, mock decorators, or boilerplate, extract them to a pytest fixture or helper. DRY applies to tests.
 
 ## Error Handling
 - Define custom exception classes for domain-specific errors (e.g. InvalidPhotoFormat, FaceDetectionFailed)
